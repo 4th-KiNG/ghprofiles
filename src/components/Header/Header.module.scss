@@ -1,0 +1,14 @@
+.Header{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    &_Title{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        background: transparent;
+    }
+}
