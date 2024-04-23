@@ -1,5 +1,5 @@
 import styles from './MainPage.module.scss'
-import {useEffect, useState} from 'react'
+import { useState} from 'react'
 import axios from 'axios'
 import search from '../../assets/search.svg'
 const MainPage = () => {
@@ -43,7 +43,7 @@ const MainPage = () => {
                         <a href={`${props.htmlUrl}`} className={styles.User_MainInfo_Link}>Go to profile</a>
                     </div>
                     <div className={styles.User_MainInfo_Container2}>
-                        <p className={styles.User_Name}>Name: {props.name == null ? "Not indicated" : props.name}</p>
+                        <p>Name: {props.name == null ? "Not indicated" : props.name}</p>
                         <p>Created at: {props.date.split("T")[0]}</p>
                         <p>Count of public repositories: {props.repcount}</p>
                     </div>

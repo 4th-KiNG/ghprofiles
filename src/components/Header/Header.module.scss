@@ -10,5 +10,12 @@
         font-weight: 600;
         color: white;
         background: transparent;
+        @media (max-width:600px) {
+            font-size: 24px;
+        }
+    }
+    @media (max-width:600px) {
+        height: 70px;
+        padding: 12px;
     }
 }

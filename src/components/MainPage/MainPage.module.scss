@@ -1,6 +1,6 @@
 .Input{
     display: block;
-    min-width: 400px;
+    min-width: 200px;
     width: 100%;
     color: white;
     padding: 6px 15px;
@@ -9,6 +9,7 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     display: flex;
+    align-items: center;
     
     &_Input{
         display: block;
@@ -20,6 +21,11 @@
         font-size: 20px;
         background: rgba(255, 255, 255, 0);
         border-radius: 6px;
+        @media (max-width:1200px) {
+            font-size: 16px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
         &::placeholder{
             font-weight: 600;
         }
@@ -27,12 +33,17 @@
     &_Ico{
         background: transparent;
         width: 18px;
+        @media (max-width:1200px) {
+            height: 18px;
+        }
     }
 }
 .MainPage{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -46,6 +57,13 @@
         margin-right: auto;
         font-size: 64px;
         font-weight: 600;
+        @media (max-width:1200px) {
+            font-size: 40px;
+            text-align: center;
+        }
+        @media (max-width:500px) {
+            font-size: 30px;
+        }
     }
     &_Description{
         color: white;
@@ -55,6 +73,9 @@
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        @media (max-width:1200px) {
+            font-size: 15px;
+        }
     }
     &_Enter{
         width: 200px;
@@ -65,7 +86,11 @@
         color: rgb(152, 84, 255);
         position: relative;
         cursor: pointer;
-
+        @media (max-width:1200px) {
+            font-size: 16px;
+            padding: 6px;
+            width: 120px;
+        }
         span {
             position: relative;
             transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
@@ -114,30 +139,70 @@
         width: 250px;
         height: 250px;
         border-radius: 50%;
+        @media (max-width:1200px) {
+            width: 120px;
+            height: 120px;
+        }
+        @media (max-width:500px) {
+            width: 80px;
+            height: 80px;
+        }
     }
     &_Login{
         font-size: 30px;
         text-align: center;
         margin-bottom: 20px;
+        @media (max-width:1200px) {
+            font-size: 22px;
+        }
     }
     &_MainInfo{
         display: flex;
         height: 90%;
         box-sizing: border-box;
         justify-content: space-between;
+        @media (max-width:1200px) {
+            flex-direction: column;
+        }
         &_Container1{
             display: flex;
             flex-direction: column;
             height: 100%;
             box-sizing: border-box;
             justify-content: space-between;
+            @media (max-width:1200px) {
+                flex-direction: row;
+                height: 120px;
+                align-items: center;
+            }
         }
         &_Container2{
             display: flex;
             flex-direction: column;
-            height: 100%;
-            box-sizing: border-box;
+            gap: 10px;
             font-size: 20px;
+            height: 100%;
+            flex: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 6px;
+            padding: 16px;
+            font-size: 20px;
+            @media (max-width:1200px) {
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+            }
+            &>p{
+                font-size: 22px;
+                @media (max-width:1200px) {
+                    font-size: 16px;
+                }
+            }
         }
         &_Link{
             text-decoration: none;
@@ -148,6 +213,14 @@
             background-color: white;
             padding: 20px;
             border-radius: 6px;
+            @media (max-width:1200px) {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 16px;
+            }
         }
         &_Repos{
             display: flex;
@@ -168,6 +241,9 @@
                 padding: 18px;
                 font-size: 20px;
                 gap: 28px;
+                @media (max-width:600px) {
+                    font-size: 14px;
+                }
             }
         }
     }
