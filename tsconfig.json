@@ -22,10 +22,6 @@
     
   },
   "include": ["src"],
-  "scripts": {
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   
   "references": [{ "path": "./tsconfig.node.json" }]
 }
